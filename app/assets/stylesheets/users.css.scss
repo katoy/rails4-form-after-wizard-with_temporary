@@ -1,0 +1,15 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+table { border-collapse: collapse; font-family: Futura, Arial, sans-serif; border: 1px solid #777; }
+caption { font-size: larger; margin: 1em auto; }
+th, td { padding: .65em; }
+th, thead { background: #000; color: #fff; border: 1px solid #000; }
+tr:nth-child(odd) { background: #eee; }
+tr:hover { background: #aaa; }
+td { border-right: 1px solid #777; }

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:email, scope: 'view') %>:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong><%= t(:name, scope: 'view') %>:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong><%= t(:twitter_username, scope: 'view') %>:</strong>
+  <%= @user.twitter_username %>
+</p>
+
+<p>
+  <strong>Github username:</strong>
+  <%= @user.github_username %>
+</p>
+
+<p>
+  <strong><%= t(:website, scope: 'view') %>:</strong>
+  <%= @user.website %>
+</p>
+
+<p>
+  <strong><%= t(:date_of_birth, scope: 'view') %>:</strong>
+  <%= @user.date_of_birth %>
+</p>
+
+<p>
+  <strong><%= t(:bio, scope: 'view') %>:</strong>
+  <%= @user.bio %>
+</p>
+
+<%= link_to t(:edit, scope: 'view'), edit_user_path(@user) %> |
+<%= link_to t(:back, scope: 'view'), users_path %>

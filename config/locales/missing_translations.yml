@@ -1,0 +1,8 @@
+---
+ja:
+  no key: No Key
+  ja: Ja
+  errors:
+    message:
+      blank: Blank
+  view:password: View:Password

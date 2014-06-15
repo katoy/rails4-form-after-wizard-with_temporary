@@ -1,0 +1,53 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:email, scope: 'view') %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label t(:password, scope: 'view') %><br>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label t(:password_confirmation, scope: 'view') %><br>
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="field">
+    <%= f.label t(:name, scope: 'view') %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label t(:twitter_username, scope: 'view') %><br>
+    <%= f.text_field :twitter_username %>
+  </div>
+  <div class="field">
+    <%= f.label t(:github_username, scope: 'view') %><br>
+    <%= f.text_field :github_username %>
+  </div>
+  <div class="field">
+    <%= f.label t(:website, scope: 'view') %><br>
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label t(:date_of_birth, scope: 'view') %><br>
+    <%= f.date_select :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label t(:bio, scope: 'view') %><br>
+    <%= f.text_area :bio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

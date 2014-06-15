@@ -1,0 +1,22 @@
+<%= link_to t(:new_tmp, scope: 'view'), new_tmp_path %>  ＞
+<%= link_to t(:about_you, scope: 'view'), previous_wizard_path %>  ＞
+<b><%= t(:where_can_we_find_you, scope: 'view') %></b>
+
+<h1><%= t(:where_can_we_find_you, scope: 'view') %></h1>
+
+<%= render layout: 'form' do |f| %>
+
+  <div class="field">
+    <%= f.label t(:twitter_username, scope: 'view') %><br>
+    <%= f.text_field :twitter_username %>
+  </div>
+  <div class="field">
+    <%= f.label t(:github_username, scope: 'view') %><br>
+    <%= f.text_field :github_username %>
+  </div>
+  <div class="field">
+    <%= f.label t(:website, scope: 'view') %><br>
+    <%= f.text_field :website %>
+  </div>
+
+<% end %>

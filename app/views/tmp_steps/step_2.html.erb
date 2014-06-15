@@ -1,0 +1,22 @@
+<%= link_to t(:new_tmp, scope: 'view'), new_tmp_path %>  ＞
+<b><%= t(:about_you, scope: 'view') %></b> ＞
+<%= link_to  t(:where_can_we_find_you, scope: 'view'), next_wizard_path %><br>
+
+<h1><%= t(:about_you, scope: 'view') %></h1>
+
+<%= render layout: 'form' do |f| %>
+
+  <div class="field">
+    <%= f.label t(:name, scope: 'view') %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label t(:date_of_birth, scope: 'view') %><br>
+    <%= f.date_select :date_of_birth, start_year: 1900, end_year: Date.today.year, include_blank: true %>
+  </div>
+  <div class="field">
+    <%= f.label t(:bio, scope: 'view') %><br>
+    <%= f.text_area :bio %>
+  </div>
+
+<% end %>

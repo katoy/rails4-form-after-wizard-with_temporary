@@ -1,0 +1,41 @@
+<h1><%= t(:listing_users, scope: 'view') %></h1>
+
+参照： <a href='http://railscasts.com/episodes/346-wizard-forms-with-wicked?language=ja&view=asciicast' target='_blank'>http://railscasts.com/episodes/346-wizard-forms-with-wicked?language=ja&view=asciicast</a> (#346 Wizard Forms with Wicked)
+<br>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(:email, scope: 'view') %></th>
+      <th><%= t(:name, scope: 'view') %></th>
+      <th><%= t(:twitter_username, scope: 'view') %></th>
+      <th><%= t(:github_username, scope: 'view') %></th>
+      <th><%= t(:website, scope: 'view') %></th>
+      <th><%= t(:date_of_birth, scope: 'view') %></th>
+      <th>Bio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.name %></td>
+        <td><%= user.twitter_username %></td>
+        <td><%= user.github_username %></td>
+        <td><%= user.website %></td>
+        <td><%= user.date_of_birth %></td>
+        <td><%= user.bio %></td>
+        <td><%= link_to t(:show, scope: 'view'), user %></td>
+        <td><%= link_to t(:edit, scope: 'view'), edit_user_path(user) %></td>
+        <td><%= link_to t(:destroy, scope: 'view'), user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t(:new_user, scope: 'view'), new_tmp_path %>
