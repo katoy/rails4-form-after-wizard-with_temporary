@@ -1,10 +1,14 @@
 
-[![Build Status](https://travis-ci.org/katoy/rails4-form-after-wizard.svg?branch=master)](https://travis-ci.org/katoy/rails4-form-after-wizard)
-[![Dependency Status](https://gemnasium.com/katoy/rails4-form-after-wizard.png)](https://gemnasium.com/katoy/rails4-form-after-wizard)
-[![Coverage Status](https://coveralls.io/repos/katoy/rails4-form-after-wizard/badge.png?branch=master)](https://coveralls.io/r/katoy/rails4-form-after-wizard?branch=master)
+[![Build Status](https://travis-ci.org/katoy/rails4-form-after-wizard-with_temporary.svg?branch=master)](https://travis-ci.org/katoy/rails4-form-after-wizard-with_temporary)
+[![Dependency Status](https://gemnasium.com/katoy/rails4-form-after-wizard-with_temporary.png)](https://gemnasium.com/katoy/rails4-form-after-wizard-with_temporary)
+[![Coverage Status](https://coveralls.io/repos/katoy/rails4-form-after-wizard-with_temporary/badge.png?branch=master)](https://coveralls.io/r/katoy/rails4-form-after-wizard-with_temporary?branch=master)
 
 これは、rails4 アプリケーションでの Form 画面のサンプルです。  
-[別レポジトリーでの form 画面](https://github.com/katoy/rails4-form-before-wizard) を wizard 形式に変更したものです。  
+[別レポジトリーでの wizard な form 画面](https://github.com/katoy/rails4-form-after-wizard) を編集中データをtemporaroy な DB に保存するようにしたバージィンです。  
+
+参考：  
+[https://github.com/vlado/rails_temporary_data](https://github.com/vlado/rails_temporary_data)  
+> Rails engine to simply save big temporary data (too big for session cookie store) in a database. It is great for a step-by-step wizard or similar functionality.  
 
 #
 # 実行
