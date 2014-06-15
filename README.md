@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/katoy/rails4-form-after-wizard-with_temporary/badge.png?branch=master)](https://coveralls.io/r/katoy/rails4-form-after-wizard-with_temporary?branch=master)
 
 これは、rails4 アプリケーションでの Form 画面のサンプルです。  
-[別レポジトリーでの wizard な form 画面](https://github.com/katoy/rails4-form-after-wizard) を編集中データをtemporaroy な DB に保存するようにしたバージィンです。  
+[別レポジトリーでの wizard な form 画面](https://github.com/katoy/rails4-form-after-wizard) を編集中データをtemporaroy な DB に保存するようにしたバージョンです。  
 
 参考：  
 [https://github.com/vlado/rails_temporary_data](https://github.com/vlado/rails_temporary_data)  
